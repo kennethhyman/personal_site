@@ -1,0 +1,19 @@
+<h1>{{route}}</h1>
+<div class="container">
+  <div class="menu">
+    <div class="links">
+      {{#link-to "home"}}
+          <em>Home</em>
+      {{/link-to}}
+      {{#link-to 'about'}}
+        About
+      {{/link-to}}
+      {{#link-to 'contact'}}
+        Contact
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>

@@ -1,0 +1,14 @@
+{{nav-bar route="About"}}
+<div class="content">
+	<p>I have been programming for nearly 6 years. Most of my time programming
+has been spent working with ruby, however, I also have experience working with
+a large number of languages</p>
+
+	<div class="languages">
+		<p><span>Languages:</span> Ruby, Java, Javascript, Python, and C#</p>
+	</div>
+
+	{{#each model  as |project|}}
+	  {{project-block project=project}}
+	{{/each}}
+</div>
